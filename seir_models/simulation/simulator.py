@@ -5,10 +5,10 @@ import numpy.typing as npt
 
 Parameters = Tuple[float, float, float] # (beta, sigma, gamma)
 InitialConditions = Tuple[float, float, float, float] # (S0, E0, I0, R0)
-SEIRSeries = Tuple[npt.NDArray[np.float_], 
-                   npt.NDArray[np.float_], 
-                   npt.NDArray[np.float_], 
-                   npt.NDArray[np.float_]] # (S, E, I, R)
+SEIRSeries = Tuple[npt.NDArray[np.float64], 
+                   npt.NDArray[np.float64], 
+                   npt.NDArray[np.float64], 
+                   npt.NDArray[np.float64]] # (S, E, I, R)
 def simulate_seir(
     parameters: Parameters,
     init_conditions: InitialConditions,
